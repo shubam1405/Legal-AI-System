@@ -1,0 +1,7 @@
+{
+    "python.defaultInterpreterPath": "C:\\Python312\\python.exe",
+    "python.interpreter.infoVisibility": "always",
+    "pylance.inlayHints.variableTypes": false,
+    "python.analysis.extraPaths": [],
+    "python.analysis.autoImportCompletions": true
+}

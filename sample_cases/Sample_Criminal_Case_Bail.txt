@@ -1,0 +1,250 @@
+================================================================================
+                        CASE FILE DOCUMENT
+                  CRIMINAL MATTER - BAIL APPLICATION
+================================================================================
+
+FIR REFERENCE: FIR No. 189/2025
+POLICE STATION: Cyber Crime Cell, Delhi
+DATE OF FIR: 5th December 2025
+SECTIONS: 420, 467, 468, 471 IPC r/w Section 66D IT Act, 2000
+
+================================================================================
+                           ACCUSED DETAILS
+================================================================================
+
+ACCUSED / APPLICANT:
+Name: Mr. Amit Sinha
+Age: 34 years
+Father's Name: Late Shri Ramesh Sinha
+Occupation: Software Engineer (formerly at TechSoft Solutions Pvt. Ltd.)
+Address: Flat No. 302, Tower B, Mahagun Moderne, Sector 78, Noida - 201301
+Education: B.Tech (Computer Science), MBA
+Marital Status: Married with 2 minor children (ages 6 and 4)
+No Previous Criminal Record
+
+COMPLAINANT:
+Name: Mr. Sudhir Malhotra
+Designation: Chief Financial Officer
+Company: DigiPay Solutions Pvt. Ltd.
+Address: 5th Floor, Cyber Hub, Gurugram
+
+================================================================================
+                         ALLEGATIONS IN FIR
+================================================================================
+
+As per the FIR, the following allegations have been made:
+
+1. The accused was employed as Senior Software Developer at DigiPay Solutions 
+   Pvt. Ltd. from January 2022 to October 2025.
+
+2. During his employment, he allegedly:
+   a) Created a backdoor in the payment processing system
+   b) Diverted funds from customer transactions to personal accounts
+   c) Forged authorization emails to approve suspicious transactions
+   d) Allegedly siphoned off Rs. 45,00,000/- over a period of 18 months
+
+3. The fraud was discovered during an internal audit in November 2025.
+
+4. Upon confrontation, the accused allegedly resigned immediately.
+
+5. Company conducted forensic audit and filed FIR.
+
+================================================================================
+                       ACCUSED'S VERSION OF FACTS
+================================================================================
+
+The accused DENIES all allegations and states:
+
+1. He was a dedicated employee with excellent performance reviews for 3 years.
+
+2. In August 2025, he raised concerns about security vulnerabilities in the 
+   payment system to his supervisor, which were ignored.
+
+3. He was asked to resign on 15th October 2025 after he refused to participate 
+   in certain irregular practices being carried out by senior management.
+
+4. He submitted his resignation under duress and was not paid his dues of:
+   - 3 months salary: Rs. 4,50,000/-
+   - Performance bonus: Rs. 2,00,000/-
+   - PF amount: Rs. 3,50,000/-
+
+5. The present FIR is a result of malafide intent to:
+   a) Prevent him from claiming his dues
+   b) Stop him from reporting irregularities to authorities
+   c) Damage his reputation in the industry
+
+6. He was arrested on 10th December 2025 from his residence.
+
+7. He is currently in judicial custody since 12th December 2025 
+   (custody period: 40 days as of today).
+
+================================================================================
+                    INVESTIGATION STATUS
+================================================================================
+
+1. Forensic audit report submitted by company (not by independent agency)
+2. Statement of 5 witnesses recorded (all current employees of complainant)
+3. Bank statements seized showing NO unusual deposits in accused's accounts
+4. Accused's personal devices seized - examination pending
+5. No independent forensic examination conducted by police yet
+6. Chargesheet NOT YET FILED
+
+================================================================================
+                   GROUNDS FOR BAIL
+================================================================================
+
+1. FALSE IMPLICATION:
+   - The accused is innocent and has been falsely implicated
+   - Case is motivated by mala fide intent to prevent whistleblowing
+
+2. NO FLIGHT RISK:
+   - Deep roots in society - born and raised in Delhi NCR
+   - Family consisting of wife, 2 minor children, and elderly mother
+   - Passport already surrendered to IO
+   - Fixed assets including flat worth Rs. 1.2 Crore
+
+3. NO CRIMINAL ANTECEDENTS:
+   - No previous criminal record
+   - Clean background verification
+   - Respected member of society
+
+4. COOPERATION WITH INVESTIGATION:
+   - Appeared before IO whenever summoned
+   - Provided all documents demanded
+   - Not hampered investigation in any manner
+
+5. NO TAMPERING POSSIBILITY:
+   - All evidence is documentary/electronic
+   - Witnesses are employees of complainant, not accessible to accused
+   - Digital evidence already seized and preserved
+
+6. PROLONGED CUSTODY:
+   - Already in custody for 40 days
+   - Investigation at advanced stage
+   - No useful purpose served by continued detention
+
+7. PARITY:
+   - Two other employees named in audit report not arrested
+   - Discriminatory treatment against accused alone
+
+8. HEALTH GROUNDS:
+   - Accused suffers from diabetes and hypertension
+   - Regular medication required
+   - Medical facilities in jail inadequate
+
+9. FAMILY HARDSHIP:
+   - Sole breadwinner of family
+   - Wife is homemaker
+   - Minor children's education suffering
+   - Elderly mother (72 years) dependent and unwell
+
+10. MAXIMUM PUNISHMENT:
+    - Offense under Section 420 IPC punishable with max 7 years
+    - Not a heinous offense warranting continued detention
+
+================================================================================
+                    SUPPORTING DOCUMENTS
+================================================================================
+
+1. Employment records and offer letter
+2. Performance appraisal reports (2022-2025)
+3. Email dated 15th August 2025 raising security concerns
+4. Resignation letter dated 15th October 2025
+5. Salary slips showing unpaid dues
+6. Bank statements of accused (showing no suspicious deposits)
+7. Property documents showing fixed assets
+8. Passport (already surrendered)
+9. Medical prescriptions for diabetes/hypertension
+10. Children's school certificates
+11. Affidavit of wife regarding family situation
+
+================================================================================
+                    RELEVANT CASE LAWS FOR BAIL
+================================================================================
+
+1. Sanjay Chandra vs. CBI (2012) 1 SCC 40
+   - "Bail is the rule, jail is the exception"
+
+2. Arnesh Kumar vs. State of Bihar (2014) 8 SCC 273
+   - Guidelines against unnecessary arrest
+
+3. Dataram Singh vs. State of UP (2018) 3 SCC 22
+   - On bail in economic offenses
+
+4. Satender Kumar Antil vs. CBI (2022) 10 SCC 51
+   - Latest guidelines on bail
+
+5. P. Chidambaram vs. Directorate of Enforcement (2019) 9 SCC 24
+   - Economic offenses and bail considerations
+
+================================================================================
+                    PROPOSED BAIL CONDITIONS
+================================================================================
+
+The accused undertakes to:
+
+1. Appear before the IO as and when required
+2. Not leave India without Court's permission
+3. Not contact or influence witnesses
+4. Not tamper with evidence
+5. Furnish personal bond of Rs. 2,00,000/- with 2 sureties
+6. Mark attendance at PS every Sunday
+7. Deposit passport (already done)
+8. Share current mobile number with IO
+9. Not change residence without informing Court
+
+================================================================================
+                    PROSECUTOR'S LIKELY OBJECTIONS
+================================================================================
+
+1. Economic offense involving large amount (Rs. 45 Lakhs)
+2. Accused may influence witnesses (current employees)
+3. Further investigation pending - digital forensics
+4. Accused may flee/abscond
+5. Accused was in position of trust
+
+================================================================================
+                    COUNTER TO OBJECTIONS
+================================================================================
+
+1. Amount alleged is disputed; no independent verification
+2. Witnesses are under complainant's control, not accused's
+3. Digital evidence already seized; no role of accused in examination
+4. Passport surrendered; deep local roots
+5. Position of trust argument applies pre-trial; not relevant for bail
+
+================================================================================
+                    CASE STRENGTH ASSESSMENT
+================================================================================
+
+FOR BAIL:
+- Clean antecedents: STRONG
+- Family circumstances: STRONG  
+- Prolonged custody without chargesheet: STRONG
+- No evidence of flight risk: STRONG
+- Documentary nature of evidence: MODERATE
+- Parity argument: MODERATE
+
+AGAINST BAIL:
+- Serious economic offense: MODERATE
+- Trust position allegation: MODERATE
+
+OVERALL BAIL PROSPECTS: GOOD (70-75%)
+
+================================================================================
+                    CUSTODY DETAILS
+================================================================================
+
+Arrest Date: 10th December 2025
+Remand: 14 days police custody (10-24 December 2025)
+Judicial Custody: Since 24th December 2025
+Total Custody: 40+ days
+Jail: Tihar Jail, Jail No. 3
+
+Previous Bail Applications:
+1. Police Custody Bail - Rejected on 12th December 2025
+2. Present application is FIRST Regular Bail Application
+
+================================================================================
+                              END OF CASE FILE
+================================================================================

@@ -1,0 +1,85 @@
+{
+  "id": "bdddbc99-b76c-4445-a162-bfc241541be6",
+  "ai_insights": {},
+  "case_number": "",
+  "case_type": "Civil",
+  "court_name": "",
+  "court_room": "",
+  "court_type": "District",
+  "created_at": "2026-03-26T04:22:04.746566",
+  "created_by": "satwikrajv@gmail.com",
+  "document_checklist": {
+    "Plaint": "missing",
+    "Written Statement": "missing",
+    "Affidavit": "missing",
+    "Evidence Documents": "missing",
+    "Property Documents": "missing",
+    "Correspondence": "missing",
+    "Court Orders": "missing"
+  },
+  "documents": [],
+  "facts": "",
+  "hearing_date": null,
+  "ipc_sections": [],
+  "issues": [],
+  "judge_name": "",
+  "jurisdiction": "sfv",
+  "legal_domain": "General",
+  "next_hearing": null,
+  "parties": [],
+  "precedents": [],
+  "raw_text": "",
+  "reference_number": "CIV/SFV/2026/381E7A",
+  "status": "active",
+  "summary": "sfv",
+  "tasks": [
+    {
+      "id": "651380fe",
+      "title": "Draft Plaint",
+      "description": "",
+      "priority": "High",
+      "status": "pending",
+      "due_date": null,
+      "created_at": "2026-03-26T04:22:04.746624"
+    },
+    {
+      "id": "d994727d",
+      "title": "Collect Evidence",
+      "description": "",
+      "priority": "High",
+      "status": "pending",
+      "due_date": null,
+      "created_at": "2026-03-26T04:22:04.746654"
+    },
+    {
+      "id": "f13cdfbc",
+      "title": "File Suit",
+      "description": "",
+      "priority": "High",
+      "status": "pending",
+      "due_date": null,
+      "created_at": "2026-03-26T04:22:04.746676"
+    },
+    {
+      "id": "3b400589",
+      "title": "Serve Notice",
+      "description": "",
+      "priority": "Medium",
+      "status": "pending",
+      "due_date": null,
+      "created_at": "2026-03-26T04:22:04.746694"
+    },
+    {
+      "id": "ef8caf8b",
+      "title": "Prepare Arguments",
+      "description": "",
+      "priority": "Medium",
+      "status": "pending",
+      "due_date": null,
+      "created_at": "2026-03-26T04:22:04.746713"
+    }
+  ],
+  "timeline": [],
+  "title": "wd",
+  "updated_at": "2026-03-26T04:22:04.869469"
+}

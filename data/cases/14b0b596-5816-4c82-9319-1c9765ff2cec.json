@@ -1,0 +1,188 @@
+{
+  "id": "14b0b596-5816-4c82-9319-1c9765ff2cec",
+  "reference_number": "",
+  "case_number": "5678",
+  "title": "iuyyu",
+  "case_type": "Criminal",
+  "legal_domain": "",
+  "status": "active",
+  "court_name": "",
+  "court_type": "District Court",
+  "jurisdiction": "Delhi",
+  "judge_name": "",
+  "court_room": "room4",
+  "next_hearing": null,
+  "hearing_date": "2026-03-10",
+  "summary": "Mr. Amit Sinha, a former Senior Software Developer at DigiPay Solutions, is accused of creating a backdoor in the company's payment system, diverting Rs. 45 lakhs to his personal accounts, and forging authorization emails over an 18-month period. The fraud was discovered during an internal audit, leading to his resignation, a forensic audit, and the filing of an FIR under IPC sections 420, 467, 468, 471, and Section 66D of the IT Act. He was arrested on December 10, 2025, and is currently in judicial custody.",
+  "facts": "",
+  "raw_text": "﻿________________\r\nREPORT UNDER SECTION 173 CODE OF CRIMINAL PROCEDURE (CHARGESHEET)\r\nIN THE COURT OF THE CHIEF METROPOLITAN MAGISTRATE, DELHI\r\n1. General Information\r\n* FIR No.: 189/2025\r\n\r\n* Police Station: Cyber Crime Cell, Delhi\r\n\r\n* Date of FIR: 5th December 2025\r\n\r\n* Under Sections: 420, 467, 468, 471 IPC r/w Section 66D IT Act, 2000\r\n\r\n2. Details of the Complainant\r\n   * Name: Mr. Sudhir Malhotra\r\n\r\n   * Designation: Chief Financial Officer\r\n\r\n   * Company: DigiPay Solutions Pvt. Ltd.\r\n\r\n   * Address: 5th Floor, Cyber Hub, Gurugram\r\n\r\n3. Details of the Accused\r\n      * Name: Mr. Amit Sinha\r\n\r\n      * Father's Name: Late Shri Ramesh Sinha\r\n\r\n      * Age: 34 years\r\n\r\n      * Address: Flat No. 302, Tower B, Mahagun Moderne, Sector 78, Noida - 201301\r\n\r\n      * Occupation: Software Engineer (formerly at TechSoft Solutions Pvt. Ltd.)\r\n\r\n      * Custody Status: Arrested on 10th December 2025; remanded to police custody from 10th to 24th December 2025, and currently in judicial custody at Tihar Jail, Jail No. 3 since 24th December 2025.\r\n\r\n4. Brief Facts of the Case (Prosecution's Case)\r\n         * The accused was employed as a Senior Software Developer at DigiPay Solutions Pvt. Ltd. between January 2022 and October 2025.\r\n\r\n         * It is alleged that during his tenure, the accused created a backdoor in the company's payment processing system.\r\n\r\n         * The accused allegedly diverted funds from customer transactions to his personal accounts and forged authorization emails to approve these suspicious transactions.\r\n\r\n         * Through these methods, the accused allegedly siphoned off a total of Rs. 45,00,000/- over an 18-month period.\r\n\r\n         * The financial fraud was discovered during an internal audit conducted by the company in November 2025.\r\n\r\n         * Upon being confronted by the management, the accused allegedly resigned immediately.\r\n\r\n         * The company subsequently conducted a forensic audit and filed the present FIR.\r\n\r\n5. Evidence and Seizures\r\n            * A forensic audit report has been submitted by the complainant company.\r\n\r\n            * Statements under Section 161 CrPC have been recorded for 5 witnesses, all of whom are current employees of the complainant company.\r\n\r\n            * The bank statements of the accused have been seized for analysis.\r\n\r\n            * The personal digital devices of the accused have been seized by the investigating officer.\r\n\r\n6. List of Witnesses (Illustrative)\r\n               * PW-1: Mr. Sudhir Malhotra (Complainant & CFO, DigiPay Solutions)\r\n\r\n               * PW-2 to PW-6: Five current employees of DigiPay Solutions Pvt. Ltd. whose statements were recorded during the investigation. (Names withheld pending trial)\r\n\r\n               * PW-7: Investigating Officer (Cyber Crime Cell, Delhi)\r\n7. Conclusion of the Investigating Officer Based on the complaint, the internal forensic audit report provided by the company , and the statements of the witnesses , a prima facie case is made out against the accused Mr. Amit Sinha under Sections 420, 467, 468, 471 of the Indian Penal Code, read with Section 66D of the Information Technology Act, 2000. The accused is currently in judicial custody , and his seized personal devices are pending further examination. This chargesheet is filed before the Hon'ble Court for taking cognizance and initiating trial proceedings.",
+  "issues": [],
+  "parties": [
+    {
+      "name": "Mr. Sudhir Malhotra",
+      "role": "Complainant, Witness (PW-1), Chief Financial Officer of DigiPay Solutions Pvt. Ltd."
+    },
+    {
+      "name": "DigiPay Solutions Pvt. Ltd.",
+      "role": "Complainant Company"
+    },
+    {
+      "name": "Mr. Amit Sinha",
+      "role": "Accused"
+    },
+    {
+      "name": "Late Shri Ramesh Sinha",
+      "role": "Accused's Father"
+    },
+    {
+      "name": "TechSoft Solutions Pvt. Ltd.",
+      "role": "Accused's former employer (prior to DigiPay Solutions)"
+    },
+    {
+      "name": "Five current employees of DigiPay Solutions Pvt. Ltd.",
+      "role": "Witnesses (PW-2 to PW-6)"
+    },
+    {
+      "name": "Investigating Officer (Cyber Crime Cell, Delhi)",
+      "role": "Witness (PW-7)"
+    },
+    {
+      "name": "Chief Metropolitan Magistrate, Delhi",
+      "role": "Court/Judicial Authority"
+    }
+  ],
+  "ipc_sections": [],
+  "precedents": [],
+  "documents": [
+    {
+      "id": "8d51beae-1723-414a-bd8d-99b5d6531a79",
+      "name": "Mock Chargesheet Data Generation.txt",
+      "file_type": "PLAIN",
+      "uploaded_at": "2026-03-05T15:46:42.091891"
+    }
+  ],
+  "document_checklist": {},
+  "tasks": [],
+  "timeline": [
+    {
+      "date": "January 2022",
+      "title": "Accused's Employment Commencement",
+      "description": "Mr. Amit Sinha commenced employment as a Senior Software Developer at DigiPay Solutions Pvt. Ltd.",
+      "type": "incident"
+    },
+    {
+      "date": "Over 18-month period (within Jan 2022 - Oct 2025)",
+      "title": "Alleged Fund Siphoning",
+      "description": "Accused allegedly siphoned off a total of Rs. 45,00,000/- from the company's payment processing system.",
+      "type": "incident"
+    },
+    {
+      "date": "October 2025",
+      "title": "Accused's Resignation",
+      "description": "Accused Mr. Amit Sinha resigned immediately upon being confronted by management regarding the financial fraud.",
+      "type": "incident"
+    },
+    {
+      "date": "November 2025",
+      "title": "Fraud Discovery",
+      "description": "The financial fraud was discovered during an internal audit conducted by DigiPay Solutions Pvt. Ltd.",
+      "type": "incident"
+    },
+    {
+      "date": "5th December 2025",
+      "title": "FIR Filed",
+      "description": "FIR No. 189/2025 filed by Mr. Sudhir Malhotra (CFO, DigiPay Solutions) at Cyber Crime Cell, Delhi.",
+      "type": "filing"
+    },
+    {
+      "date": "10th December 2025",
+      "title": "Accused Arrested",
+      "description": "Mr. Amit Sinha, the accused, was arrested.",
+      "type": "incident"
+    },
+    {
+      "date": "10th December 2025 - 24th December 2025",
+      "title": "Police Custody",
+      "description": "Accused Mr. Amit Sinha was remanded to police custody.",
+      "type": "order"
+    },
+    {
+      "date": "24th December 2025",
+      "title": "Judicial Custody",
+      "description": "Accused Mr. Amit Sinha was remanded to judicial custody at Tihar Jail, Jail No. 3.",
+      "type": "order"
+    },
+    {
+      "date": "Undated (after 24th Dec 2025)",
+      "title": "Chargesheet Filed",
+      "description": "Chargesheet filed before the Hon'ble Chief Metropolitan Magistrate, Delhi, for taking cognizance and initiating trial proceedings.",
+      "type": "filing"
+    }
+  ],
+  "ai_insights": {
+    "case_strength": "Strong. The prosecution's case is bolstered by a comprehensive forensic audit report from the complainant company, statements from multiple employees (including the CFO), seized bank statements of the accused, and seized personal digital devices. The accused's immediate resignation upon confrontation serves as strong circumstantial evidence. The specific legal sections invoked align directly with the alleged modus operandi of cyber fraud, embezzlement, and forgery, indicating a well-defined case by the investigating agency. The fact that the accused is already in judicial custody suggests the court found sufficient prima facie grounds.",
+    "confidence_score": 85,
+    "themes": [
+      "Cyber Fraud",
+      "Financial Embezzlement",
+      "Breach of Trust",
+      "Digital Forgery",
+      "White-collar Crime",
+      "Misuse of Computer Resources"
+    ],
+    "key_arguments": [
+      "The accused, Mr. Amit Sinha, leveraged his technical expertise as a Senior Software Developer to intentionally create a backdoor in DigiPay Solutions' payment processing system.",
+      "He systematically diverted Rs. 45,00,000/- from customer transactions to his personal accounts over an 18-month period, demonstrating a clear pattern of financial fraud.",
+      "The accused forged authorization emails to approve these suspicious transactions, indicating a deliberate attempt to conceal the fraudulent activities and establish criminal intent.",
+      "The forensic audit report provides conclusive technical evidence of the backdoor and the financial trail of the diverted funds.",
+      "The accused's immediate resignation upon being confronted by management strongly suggests an admission of guilt.",
+      "Seized bank statements and personal digital devices are expected to further corroborate the fraudulent activities and the accused's illicit financial gains."
+    ],
+    "issues": [
+      "Proof beyond reasonable doubt that the accused created and utilized the backdoor in the company's payment system.",
+      "Establishing a clear and undeniable financial trail linking the diverted funds directly to the accused's personal accounts.",
+      "Demonstrating that the accused personally forged the authorization emails with intent to cheat.",
+      "Proving the criminal intent (mens rea) for all charged offenses, including cheating, forgery, and IT Act violations.",
+      "Ensuring the admissibility and robustness of the forensic audit report and the expert testimony supporting it.",
+      "Corroborating the statements of the five employee witnesses with the technical and financial evidence."
+    ],
+    "recommendations": [
+      "Ensure the forensic audit report is presented by a highly credible and qualified expert witness, capable of explaining complex technical details clearly to the court.",
+      "Prioritize and expedite the forensic examination of the accused's seized personal digital devices to uncover additional corroborating evidence.",
+      "Prepare a detailed and easily understandable presentation of the financial trail, clearly illustrating the diversion of funds and their receipt by the accused.",
+      "Thoroughly brief all prosecution witnesses, particularly the CFO and technical personnel, for potential cross-examination regarding system vulnerabilities, company policies, and the discovery of the fraud.",
+      "Anticipate and prepare rebuttals for potential defense arguments, such as claims of system vulnerabilities, unauthorized access by others, or lack of direct intent."
+    ],
+    "risks": [
+      "The defense may challenge the methodology, findings, or chain of custody of the forensic audit report, potentially weakening its evidentiary value.",
+      "Witnesses (current employees) might face pressure or become inconsistent under rigorous cross-examination, impacting the credibility of their statements.",
+      "Difficulty in definitively proving that *only* the accused had the capability, access, and opportunity to create the backdoor and execute the fund diversions.",
+      "The seized digital devices may not yield conclusive evidence, or the defense might argue issues with their seizure or analysis.",
+      "Protracted trial proceedings could lead to delays, potentially affecting witness recall or the integrity of digital evidence if not properly managed."
+    ],
+    "potential_errors": [
+      "The document does not explicitly mention any potential errors in the case or documents. However, general potential errors in such cases could include flaws in the chain of custody for seized digital evidence or bank statements, or procedural lapses during the arrest or seizure process, though none are indicated here."
+    ],
+    "ipc_sections": [
+      "Section 420 IPC: Cheating and dishonestly inducing delivery of property. (Accused allegedly cheated the company and customers by dishonestly inducing the transfer of funds to his personal accounts).",
+      "Section 467 IPC: Forgery of valuable security, will, etc. (Accused allegedly forged authorization emails, which serve as valuable security or documents in financial transactions).",
+      "Section 468 IPC: Forgery for purpose of cheating. (Accused allegedly forged documents/emails specifically to facilitate the act of cheating and fund diversion).",
+      "Section 471 IPC: Using as genuine a forged document or electronic record. (Accused allegedly used the forged authorization emails as genuine to approve and conceal the suspicious transactions).",
+      "Section 66D IT Act, 2000: Punishment for cheating by personation by using computer resource. (Accused allegedly cheated by using computer resources to impersonate or mislead, thereby diverting funds)."
+    ],
+    "precedents": [
+      "None identifiable from the document."
+    ],
+    "key_parties": [
+      "COMPLAINANT: Mr. Sudhir Malhotra (CFO, DigiPay Solutions Pvt. Ltd.)",
+      "ACCUSED: Mr. Amit Sinha",
+      "PROSECUTION WITNESSES: Mr. Sudhir Malhotra, Five current employees of DigiPay Solutions, Investigating Officer",
+      "COURT: Chief Metropolitan Magistrate, Delhi"
+    ],
+    "service_details": "Not mentioned in the chargesheet. The accused is already in judicial custody."
+  },
+  "created_at": "2026-03-05T15:46:42.091891",
+  "updated_at": "2026-03-10T22:35:06.810748",
+  "created_by": "user",
+  "hearing_time": "22:34:00"
+}

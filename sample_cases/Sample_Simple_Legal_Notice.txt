@@ -1,0 +1,87 @@
+================================================================================
+                    SIMPLE TEST CASE - LEGAL NOTICE
+                       RECOVERY OF MONEY MATTER
+================================================================================
+
+CASE TYPE: Pre-Litigation / Civil
+DATE: 20th January 2026
+
+================================================================================
+                           PARTIES
+================================================================================
+
+CLIENT (SENDER):
+Name: Mrs. Priya Verma
+Address: 123, Sector 21, Dwarka, New Delhi - 110077
+Phone: +91-99887-65432
+Occupation: Business Owner
+
+OPPOSITE PARTY (RECIPIENT):
+Name: Mr. Rohit Kapoor
+Address: 456, Greater Kailash-II, New Delhi - 110048
+Phone: +91-98765-11223
+Occupation: Businessman
+
+================================================================================
+                         FACTS OF THE CASE
+================================================================================
+
+1. On 15th March 2024, Mrs. Priya Verma lent Rs. 10,00,000/- (Rupees Ten Lakhs) 
+   to Mr. Rohit Kapoor as a friendly loan.
+
+2. The loan was given via bank transfer from:
+   - Bank: HDFC Bank, Dwarka Branch
+   - Account: XXXXXXXX1234
+   - Transaction ID: HDFC20240315789456
+
+3. A promissory note was signed by Mr. Rohit Kapoor acknowledging the debt
+   and promising to repay within 6 months (by 15th September 2024).
+
+4. The promissory note was witnessed by:
+   - Mr. Sanjay Mehta (common friend)
+   - Mrs. Anita Sharma (neighbor)
+
+5. Interest was agreed at 12% per annum.
+
+6. Mr. Rohit Kapoor has failed to repay despite:
+   - Verbal reminders on multiple occasions
+   - WhatsApp messages (read but not replied)
+   - Phone calls (not answered)
+
+7. Last communication: Mr. Kapoor promised on 1st October 2024 to pay by 
+   Diwali 2024, but did not.
+
+8. Outstanding amount as of 20th January 2026:
+   - Principal: Rs. 10,00,000/-
+   - Interest (12% for 22 months): Rs. 2,20,000/-
+   - Total Due: Rs. 12,20,000/-
+
+================================================================================
+                    DOCUMENTS AVAILABLE
+================================================================================
+
+1. Bank statement showing transfer of Rs. 10 Lakhs
+2. Promissory Note signed by Mr. Rohit Kapoor (original)
+3. WhatsApp chat screenshots showing reminders and acknowledgment
+4. Witness details (willing to provide affidavit)
+
+================================================================================
+                       RELIEF SOUGHT
+================================================================================
+
+1. Recovery of Rs. 12,20,000/- (Principal + Interest)
+2. Future interest till actual payment
+3. Legal costs and expenses
+
+================================================================================
+                     CLIENT'S INSTRUCTIONS
+================================================================================
+
+1. Send a strong Legal Notice demanding payment within 15 days
+2. If no response, file Civil Suit for Recovery
+3. Also explore criminal complaint under Section 138 NI Act if any 
+   cheque was issued (none was issued in this case)
+
+================================================================================
+                              END
+================================================================================

@@ -1,0 +1,67 @@
+{
+  "id": "80b3690d-36a1-4a5f-a4ae-007f91c21af9",
+  "ai_insights": {
+    "case_strength": "Unable to determine",
+    "confidence_score": 50,
+    "themes": [],
+    "key_arguments": [],
+    "issues": [],
+    "recommendations": [
+      "Provide more case details for comprehensive analysis"
+    ],
+    "risks": [],
+    "potential_errors": [],
+    "ipc_sections": [],
+    "precedents": [],
+    "key_parties": [],
+    "service_details": ""
+  },
+  "case_number": "365/3436",
+  "case_type": "Criminal",
+  "court_name": "",
+  "court_room": "",
+  "court_type": "District Court",
+  "created_at": "2026-03-11T01:26:01.966392",
+  "created_by": "bestadinesh2020@gmail.com",
+  "document_checklist": {
+    "FIR Copy": "missing",
+    "Chargesheet": "missing",
+    "Witness Statements": "missing",
+    "Medical Reports": "missing",
+    "Forensic Reports": "missing",
+    "Bail Application": "included",
+    "Written Statement": "missing"
+  },
+  "documents": [
+    {
+      "id": "6fa1182b-ae2a-4de3-b885-1f68e3395735",
+      "name": "Sample_Criminal_Case_Bail.txt",
+      "file_type": "PLAIN",
+      "uploaded_at": "2026-03-11T01:25:47.293464"
+    },
+    {
+      "id": "2a2ce5fd-66f5-4c03-8bf7-50a07de7edc9",
+      "name": "Gemini_Generated_Image_cnf8micnf8micnf8.pdf",
+      "file_type": "PDF",
+      "uploaded_at": "2026-03-11T01:26:01.966392"
+    }
+  ],
+  "facts": "",
+  "hearing_date": null,
+  "ipc_sections": [],
+  "issues": [],
+  "judge_name": "",
+  "jurisdiction": "Delhi",
+  "legal_domain": "",
+  "next_hearing": null,
+  "parties": [],
+  "precedents": [],
+  "raw_text": "================================================================================\r\n                        CASE FILE DOCUMENT\r\n                  CRIMINAL MATTER - BAIL APPLICATION\r\n================================================================================\r\n\r\nFIR REFERENCE: FIR No. 189/2025\r\nPOLICE STATION: Cyber Crime Cell, Delhi\r\nDATE OF FIR: 5th December 2025\r\nSECTIONS: 420, 467, 468, 471 IPC r/w Section 66D IT Act, 2000\r\n\r\n================================================================================\r\n                           ACCUSED DETAILS\r\n================================================================================\r\n\r\nACCUSED / APPLICANT:\r\nName: Mr. Amit Sinha\r\nAge: 34 years\r\nFather's Name: Late Shri Ramesh Sinha\r\nOccupation: Software Engineer (formerly at TechSoft Solutions Pvt. Ltd.)\r\nAddress: Flat No. 302, Tower B, Mahagun Moderne, Sector 78, Noida - 201301\r\nEducation: B.Tech (Computer Science), MBA\r\nMarital Status: Married with 2 minor children (ages 6 and 4)\r\nNo Previous Criminal Record\r\n\r\nCOMPLAINANT:\r\nName: Mr. Sudhir Malhotra\r\nDesignation: Chief Financial Officer\r\nCompany: DigiPay Solutions Pvt. Ltd.\r\nAddress: 5th Floor, Cyber Hub, Gurugram\r\n\r\n================================================================================\r\n                         ALLEGATIONS IN FIR\r\n================================================================================\r\n\r\nAs per the FIR, the following allegations have been made:\r\n\r\n1. The accused was employed as Senior Software Developer at DigiPay Solutions \r\n   Pvt. Ltd. from January 2022 to October 2025.\r\n\r\n2. During his employment, he allegedly:\r\n   a) Created a backdoor in the payment processing system\r\n   b) Diverted funds from customer transactions to personal accounts\r\n   c) Forged authorization emails to approve suspicious transactions\r\n   d) Allegedly siphoned off Rs. 45,00,000/- over a period of 18 months\r\n\r\n3. The fraud was discovered during an internal audit in November 2025.\r\n\r\n4. Upon confrontation, the accused allegedly resigned immediately.\r\n\r\n5. Company conducted forensic audit and filed FIR.\r\n\r\n================================================================================\r\n                       ACCUSED'S VERSION OF FACTS\r\n================================================================================\r\n\r\nThe accused DENIES all allegations and states:\r\n\r\n1. He was a dedicated employee with excellent performance reviews for 3 years.\r\n\r\n2. In August 2025, he raised concerns about security vulnerabilities in the \r\n   payment system to his supervisor, which were ignored.\r\n\r\n3. He was asked to resign on 15th October 2025 after he refused to participate \r\n   in certain irregular practices being carried out by senior management.\r\n\r\n4. He submitted his resignation under duress and was not paid his dues of:\r\n   - 3 months salary: Rs. 4,50,000/-\r\n   - Performance bonus: Rs. 2,00,000/-\r\n   - PF amount: Rs. 3,50,000/-\r\n\r\n5. The present FIR is a result of malafide intent to:\r\n   a) Prevent him from claiming his dues\r\n   b) Stop him from reporting irregularities to authorities\r\n   c) Damage his reputation in the industry\r\n\r\n6. He was arrested on 10th December 2025 from his residence.\r\n\r\n7. He is currently in judicial custody since 12th December 2025 \r\n   (custody period: 40 days as of today).\r\n\r\n================================================================================\r\n                    INVESTIGATION STATUS\r\n================================================================================\r\n\r\n1. Forensic audit report submitted by company (not by independent agency)\r\n2. Statement of 5 witnesses recorded (all current employees of complainant)\r\n3. Bank statements seized showing NO unusual deposits in accused's accounts\r\n4. Accused's personal devices seized - examination pending\r\n5. No independent forensic examination conducted by police yet\r\n6. Chargesheet NOT YET FILED\r\n\r\n================================================================================\r\n                   GROUNDS FOR BAIL\r\n================================================================================\r\n\r\n1. FALSE IMPLICATION:\r\n   - The accused is innocent and has been falsely implicated\r\n   - Case is motivated by mala fide intent to prevent whistleblowing\r\n\r\n2. NO FLIGHT RISK:\r\n   - Deep roots in society - born and raised in Delhi NCR\r\n   - Family consisting of wife, 2 minor children, and elderly mother\r\n   - Passport already surrendered to IO\r\n   - Fixed assets including flat worth Rs. 1.2 Crore\r\n\r\n3. NO CRIMINAL ANTECEDENTS:\r\n   - No previous criminal record\r\n   - Clean background verification\r\n   - Respected member of society\r\n\r\n4. COOPERATION WITH INVESTIGATION:\r\n   - Appeared before IO whenever summoned\r\n   - Provided all documents demanded\r\n   - Not hampered investigation in any manner\r\n\r\n5. NO TAMPERING POSSIBILITY:\r\n   - All evidence is documentary/electronic\r\n   - Witnesses are employees of complainant, not accessible to accused\r\n   - Digital evidence already seized and preserved\r\n\r\n6. PROLONGED CUSTODY:\r\n   - Already in custody for 40 days\r\n   - Investigation at advanced stage\r\n   - No useful purpose served by continued detention\r\n\r\n7. PARITY:\r\n   - Two other employees named in audit report not arrested\r\n   - Discriminatory treatment against accused alone\r\n\r\n8. HEALTH GROUNDS:\r\n   - Accused suffers from diabetes and hypertension\r\n   - Regular medication required\r\n   - Medical facilities in jail inadequate\r\n\r\n9. FAMILY HARDSHIP:\r\n   - Sole breadwinner of family\r\n   - Wife is homemaker\r\n   - Minor children's education suffering\r\n   - Elderly mother (72 years) dependent and unwell\r\n\r\n10. MAXIMUM PUNISHMENT:\r\n    - Offense under Section 420 IPC punishable with max 7 years\r\n    - Not a heinous offense warranting continued detention\r\n\r\n================================================================================\r\n                    SUPPORTING DOCUMENTS\r\n================================================================================\r\n\r\n1. Employment records and offer letter\r\n2. Performance appraisal reports (2022-2025)\r\n3. Email dated 15th August 2025 raising security concerns\r\n4. Resignation letter dated 15th October 2025\r\n5. Salary slips showing unpaid dues\r\n6. Bank statements of accused (showing no suspicious deposits)\r\n7. Property documents showing fixed assets\r\n8. Passport (already surrendered)\r\n9. Medical prescriptions for diabetes/hypertension\r\n10. Children's school certificates\r\n11. Affidavit of wife regarding family situation\r\n\r\n================================================================================\r\n                    RELEVANT CASE LAWS FOR BAIL\r\n================================================================================\r\n\r\n1. Sanjay Chandra vs. CBI (2012) 1 SCC 40\r\n   - \"Bail is the rule, jail is the exception\"\r\n\r\n2. Arnesh Kumar vs. State of Bihar (2014) 8 SCC 273\r\n   - Guidelines against unnecessary arrest\r\n\r\n3. Dataram Singh vs. State of UP (2018) 3 SCC 22\r\n   - On bail in economic offenses\r\n\r\n4. Satender Kumar Antil vs. CBI (2022) 10 SCC 51\r\n   - Latest guidelines on bail\r\n\r\n5. P. Chidambaram vs. Directorate of Enforcement (2019) 9 SCC 24\r\n   - Economic offenses and bail considerations\r\n\r\n================================================================================\r\n                    PROPOSED BAIL CONDITIONS\r\n================================================================================\r\n\r\nThe accused undertakes to:\r\n\r\n1. Appear before the IO as and when required\r\n2. Not leave India without Court's permission\r\n3. Not contact or influence witnesses\r\n4. Not tamper with evidence\r\n5. Furnish personal bond of Rs. 2,00,000/- with 2 sureties\r\n6. Mark attendance at PS every Sunday\r\n7. Deposit passport (already done)\r\n8. Share current mobile number with IO\r\n9. Not change residence without informing Court\r\n\r\n================================================================================\r\n                    PROSECUTOR'S LIKELY OBJECTIONS\r\n================================================================================\r\n\r\n1. Economic offense involving large amount (Rs. 45 Lakhs)\r\n2. Accused may influence witnesses (current employees)\r\n3. Further investigation pending - digital forensics\r\n4. Accused may flee/abscond\r\n5. Accused was in position of trust\r\n\r\n================================================================================\r\n                    COUNTER TO OBJECTIONS\r\n================================================================================\r\n\r\n1. Amount alleged is disputed; no independent verification\r\n2. Witnesses are under complainant's control, not accused's\r\n3. Digital evidence already seized; no role of accused in examination\r\n4. Passport surrendered; deep local roots\r\n5. Position of trust argument applies pre-trial; not relevant for bail\r\n\r\n================================================================================\r\n                    CASE STRENGTH ASSESSMENT\r\n================================================================================\r\n\r\nFOR BAIL:\r\n- Clean antecedents: STRONG\r\n- Family circumstances: STRONG  \r\n- Prolonged custody without chargesheet: STRONG\r\n- No evidence of flight risk: STRONG\r\n- Documentary nature of evidence: MODERATE\r\n- Parity argument: MODERATE\r\n\r\nAGAINST BAIL:\r\n- Serious economic offense: MODERATE\r\n- Trust position allegation: MODERATE\r\n\r\nOVERALL BAIL PROSPECTS: GOOD (70-75%)\r\n\r\n================================================================================\r\n                    CUSTODY DETAILS\r\n================================================================================\r\n\r\nArrest Date: 10th December 2025\r\nRemand: 14 days police custody (10-24 December 2025)\r\nJudicial Custody: Since 24th December 2025\r\nTotal Custody: 40+ days\r\nJail: Tihar Jail, Jail No. 3\r\n\r\nPrevious Bail Applications:\r\n1. Police Custody Bail - Rejected on 12th December 2025\r\n2. Present application is FIRST Regular Bail Application\r\n\r\n================================================================================\r\n                              END OF CASE FILE\r\n================================================================================\r\n\n\n[Gemini_Generated_Image_cnf8micnf8micnf8.pdf] PDF could not be read. Please provide a text description of the case.",
+  "reference_number": "",
+  "status": "active",
+  "summary": "Case analysis pending. Please try again.",
+  "tasks": [],
+  "timeline": [],
+  "title": "vfbdgn",
+  "updated_at": "2026-03-11T01:26:09.454779"
+}

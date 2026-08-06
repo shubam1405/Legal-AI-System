@@ -1,0 +1,82 @@
+{
+  "id": "a73507d2-633f-4eb0-bdc3-cd9f5f2d046d",
+  "reference_number": "",
+  "case_number": "343/2443",
+  "title": "fghnhff",
+  "case_type": "Criminal",
+  "legal_domain": "",
+  "status": "active",
+  "court_name": "",
+  "court_type": "District Court",
+  "jurisdiction": "Delhi",
+  "judge_name": "",
+  "court_room": "",
+  "next_hearing": null,
+  "hearing_date": null,
+  "summary": "Unable to provide a summary as the case description was not provided. The input indicated a PDF that could not be processed, and no text description was supplied.",
+  "facts": "",
+  "raw_text": "[Gemini_Generated_Image_cnf8micnf8micnf8.pdf] PDF appears to be image-based or contains no extractable text. OCR libraries (pytesseract/Tesseract) may not be installed. Please provide a text description of the case.",
+  "issues": [],
+  "parties": [],
+  "ipc_sections": [],
+  "precedents": [],
+  "documents": [
+    {
+      "id": "d01ffe12-a74b-44ed-b502-d56e6c7f5a52",
+      "name": "Gemini_Generated_Image_cnf8micnf8micnf8.pdf",
+      "file_type": "PDF",
+      "uploaded_at": "2026-03-11T00:46:35.973597"
+    }
+  ],
+  "document_checklist": {
+    "FIR Copy": "missing",
+    "Chargesheet": "missing",
+    "Witness Statements": "missing",
+    "Medical Reports": "missing",
+    "Forensic Reports": "missing",
+    "Bail Application": "missing",
+    "Written Statement": "missing"
+  },
+  "tasks": [],
+  "timeline": [
+    {
+      "date": "N/A",
+      "title": "Document Content Missing",
+      "description": "The provided document content was a placeholder indicating an unextractable PDF, and no text description was given.",
+      "type": "incident"
+    }
+  ],
+  "ai_insights": {
+    "case_strength": "Undeterminable. Without the actual content of the legal document or a text description of the case, it is impossible to assess the strength of the case.",
+    "confidence_score": 0,
+    "themes": [
+      "No case details provided"
+    ],
+    "key_arguments": [
+      "No case details provided"
+    ],
+    "issues": [
+      "Lack of input for analysis"
+    ],
+    "recommendations": [
+      "Please provide the text description of the case for analysis."
+    ],
+    "risks": [
+      "Inability to provide legal advice or assessment due to missing information."
+    ],
+    "potential_errors": [
+      "Cannot identify potential errors without case content."
+    ],
+    "ipc_sections": [
+      "Not applicable without case details"
+    ],
+    "precedents": [
+      "Not applicable without case details"
+    ],
+    "key_parties": [],
+    "service_details": "Not applicable without case details"
+  },
+  "created_at": "2026-03-11T00:46:35.973597",
+  "updated_at": "2026-03-11T00:46:43.755653",
+  "created_by": "bestadinesh2020@gmail.com"
+}

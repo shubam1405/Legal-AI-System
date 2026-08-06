@@ -1,0 +1,136 @@
+
+================================================================================
+                    GENERATED LEGAL DOCUMENT
+================================================================================
+Document Type: Legal Notice
+Generated On: 25 March 2026 at 02:02
+Status: DRAFT - Please review and verify all details before filing
+================================================================================
+
+Thought: I have carefully analyzed the request and the provided case information. The core challenge is to draft a Legal Notice for an Indian court/legal proceeding, but the case information provided is a Supreme Court *judgment* from 2026, while a Legal Notice is typically a *pre-litigation* document.
+
+To reconcile this, I will proceed with the understanding that I need to draft a *hypothetical* Legal Notice that the "Centre For Public Interest Litigation" *would have sent* to the "Union Of India" *prior to filing* the Writ Petition (C) No. 1373 of 2018, challenging the constitutional validity of Section 17A of the Prevention of Corruption Act, 1988. This approach aligns with the purpose of a Legal Notice and the provided template.
+
+I will extract all relevant details from the case information (parties, specific legal provisions, key arguments, precedents) and integrate them into the notice. I will use placeholders only for information explicitly not available (like advocate's specific details, client's full address, specific ministry address for the Union of India). The date of the notice will be set after the introduction of Section 17A (26.07.2018) but before the writ petition was filed in 2018.
+
+I will ensure all mandatory sections of a Legal Notice are included, using formal legal language and adhering to Indian legal standards. The document will be comprehensive, legally sound, and ready for immediate (hypothetical) filing.**LEGAL NOTICE**
+Under Section 80 of the Code of Civil Procedure, 1908
+(And/Or Under the relevant provisions of applicable law)
+
+===============================================================================
+
+ADVOCATE: [ADVOCATE NAME]
+[ENROLLMENT NUMBER]
+[CHAMBER ADDRESS]
+[CONTACT: Phone/Email]
+
+Date: 15th August, 2018
+Ref No: CPIL/LN/2018/[REFERENCE NUMBER]
+
+===============================================================================
+
+TO,
+
+The Secretary,
+Ministry of Law and Justice,
+Union of India,
+[COMPLETE ADDRESS OF MINISTRY OF LAW AND JUSTICE, NEW DELHI]
+[PIN CODE]
+
+AND
+
+The Secretary,
+Department of Personnel and Training (DoPT),
+Union of India,
+[COMPLETE ADDRESS OF DOP&T, NEW DELHI]
+[PIN CODE]
+
+===============================================================================
+
+SUBJECT: LEGAL NOTICE FOR CHALLENGING THE CONSTITUTIONAL VALIDITY OF SECTION 17A OF THE PREVENTION OF CORRUPTION ACT, 1988 (AS AMENDED BY THE PREVENTION OF CORRUPTION (AMENDMENT) ACT, 2018).
+
+===============================================================================
+
+NOTICE
+
+Under instructions from and on behalf of my client:
+
+CENTRE FOR PUBLIC INTEREST LITIGATION
+[CLIENT ADDRESS - e.g., 4, Institutional Area, Lodhi Road, New Delhi - 110003]
+(Hereinafter referred to as "My Client")
+
+I do hereby serve upon you the following Legal Notice:
+
+1.  **FACTS OF THE CASE:**
+
+    a)  That my client, the Centre For Public Interest Litigation (CPIL), is a renowned public interest organization dedicated to upholding the rule of law, promoting transparency, and combating corruption in public life, and has a long-standing record of initiating legal actions in matters of significant public importance.
+
+    b)  That the Union of India, through its various ministries and departments, is responsible for the enactment and implementation of laws, including those pertaining to the prevention of corruption.
+
+    c)  That the Parliament of India enacted the Prevention of Corruption (Amendment) Act, 2018, which introduced, inter alia, Section 17A into the Prevention of Corruption Act, 1988 (hereinafter referred to as "the Act"). The said Section 17A came into effect from 26th July, 2018.
+
+    d)  That Section 17A of the Act reads as under:
+        "**17A. Enquiry or Inquiry or investigation of offences relatable to recommendations made or decision taken by public servant in discharge of official functions or duties.**- No police officer shall conduct any enquiry or inquiry or investigation into any offence alleged to have been committed by a public servant under this Act, where the alleged offence is relatable to any recommendation made or decision taken by such public servant in discharge of his official functions or duties, without the previous approval—
+        (a) in the case of a person who is or was employed, at the time when the offence was alleged to have been committed, in connection with the affairs of the Union, of that Government;
+        (b) in the case of a person who is or was employed, at the time when the offence was alleged to have been committed, in connection with the affairs of a State, of that Government;
+        (c) in the case of any other person, of the authority competent to remove him from his office, at the time when the offence was alleged to have been committed:
+        Provided that no such approval shall be necessary for cases involving arrest of a person on the spot on the charge of accepting or attempting to accept any undue advantage for himself or for any other person:
+        Provided further that the concerned authority shall convey its decision under this section within a period of three months, which may, for reasons to be recorded in writing by such authority, be extended by a further period of one month."
+
+    e)  That my client has carefully examined the provisions of the newly introduced Section 17A and is of the considered opinion that it poses a grave threat to the effective investigation and prosecution of corruption cases against public servants, thereby undermining the very spirit and objective of the Prevention of Corruption Act, 1988.
+
+2.  **GRIEVANCE/CAUSE OF ACTION:**
+
+    a)  That the introduction of Section 17A of the Act is arbitrary, discriminatory, and violative of Articles 14 and 21 of the Constitution of India, as it creates an unreasonable classification and grants undue protection to public servants, thereby impeding the fair and impartial administration of justice.
+
+    b)  That Section 17A effectively reintroduces a prior approval mechanism for investigation against public servants, which is substantially similar to provisions previously struck down by the Hon'ble Supreme Court of India in landmark judgments, including *Vineet Narain and Others vs. Union of India and Another* (1998) 1 SCC 226 and *Subramanian Swamy vs. Director, Central Bureau of Investigation and Another* (2014) 8 SCC 682. The said judgments unequivocally held that such prior approval requirements for *investigation* are unconstitutional as they act as a shield for corrupt public servants and obstruct the course of justice.
+
+    c)  That the requirement of prior approval for conducting any enquiry, inquiry, or investigation into offences alleged to have been committed by a public servant under the Act, particularly when relatable to recommendations made or decisions taken in discharge of official functions, will inevitably lead to delays, manipulation of evidence, and ultimately, the stifling of genuine anti-corruption efforts.
+
+    d)  That the provision extends this protection to all levels of public servants, making it even more pervasive and obstructive than its predecessors, which were limited to certain categories of public servants. This blanket protection is detrimental to public interest and accountability.
+
+    e)  That the experience with similar prior approval provisions has demonstrated their potential for abuse and their tendency to be used to shield corrupt officials, as evidenced by empirical data on refusal rates for such approvals.
+
+3.  **LEGAL PROVISIONS INVOKED:**
+
+    That your aforesaid act of introducing and implementing Section 17A of the Prevention of Corruption Act, 1988, constitutes a violation of:
+
+    a)  **Article 14 of the Constitution of India:** Which guarantees equality before the law and equal protection of the laws, as Section 17A creates an arbitrary and unreasonable classification between public servants and other citizens, granting public servants an unwarranted immunity from investigation.
+
+    b)  **Article 21 of the Constitution of India:** Which guarantees the right to life and personal liberty, as effective investigation and prosecution of corruption is an integral part of good governance and ensures a corruption-free society, which is essential for the dignity and well-being of citizens.
+
+    c)  **The ratio decidendi of the Hon'ble Supreme Court judgments in:**
+        *   *Vineet Narain and Others vs. Union of India and Another*, (1998) 1 SCC 226.
+        *   *Subramanian Swamy vs. Director, Central Bureau of Investigation and Another*, (2014) 8 SCC 682, which specifically struck down Section 6A of the Delhi Special Police Establishment Act, 2003, a provision analogous to Section 17A.
+
+    d)  **The Prevention of Corruption Act, 1988:** The very purpose of which is to combat corruption, is being diluted by the introduction of Section 17A.
+
+4.  **DEMAND/RELIEF SOUGHT:**
+
+    In view of the above, you are hereby called upon to:
+
+    a)  Immediately take necessary steps to reconsider, review, and withdraw Section 17A of the Prevention of Corruption Act, 1988, as introduced by the Prevention of Corruption (Amendment) Act, 2018, or to introduce suitable amendments to bring it in conformity with the constitutional mandate and the pronouncements of the Hon'ble Supreme Court of India.
+
+    b)  Ensure that no impediment is placed in the way of independent and fearless investigation into allegations of corruption against public servants.
+
+    Within a period of **thirty (30) days** from the receipt of this notice.
+
+5.  **CONSEQUENCES OF NON-COMPLIANCE:**
+
+    Please note that in the event of your failure to comply with the above demands within the stipulated time, my client shall be constrained to initiate appropriate legal proceedings, including but not limited to filing a Writ Petition before the Hon'ble Supreme Court of India or the competent High Court, challenging the constitutional validity of Section 17A of the Prevention of Corruption Act, 1988, at your risk, cost, and consequences.
+
+    Any costs, damages, and expenses incurred in such proceedings shall be recovered from you.
+
+6.  This notice is being sent to you by Registered Post AD/Speed Post/Hand Delivery/Email, and you are advised to acknowledge receipt of the same. A copy of this notice is retained in my office for further necessary action.
+
+**VERIFICATION**
+
+I, [ADVOCATE NAME], Advocate for the Centre For Public Interest Litigation, do hereby verify that the contents of this Legal Notice are true and correct to the best of my knowledge and belief, and nothing material has been concealed therefrom.
+
+Place: [CITY, e.g., New Delhi]
+Date: 15th August, 2018
+
+(Signature)
+_________________________
+[ADVOCATE NAME]
+Advocate for My Client
