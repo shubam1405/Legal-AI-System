@@ -34,6 +34,26 @@ app.include_router(public_router, prefix="/api/public", tags=["public"])
 app.include_router(lawyer_router, prefix="/api/lawyer", tags=["lawyer"])
 app.include_router(document_router, prefix="/api/document", tags=["document"])
 
+@app.on_event("startup")
+async def on_startup() -> None:
+    """
+    Opens the LangGraph Postgres checkpointer's connection pool and runs
+    its one-time table setup — must happen here (inside the real running
+    event loop), not at import time. Then prints every registered route.
+    """
+    from backend.graph.checkpoint import init_persistence
+    await init_persistence()
+
+    print("\nRegistered Routes")
+    for route in app.routes:
+        methods = getattr(route, "methods", None)
+        path = getattr(route, "path", None)
+        if methods and path:
+            for method in sorted(methods):
+                if method != "HEAD":
+                    print(f"{method:6} {path}")
+    print()
+
 @app.get("/")
 def root() -> Dict[str, Any]:
     """Root endpoint for status check."""
@@ -41,3 +61,9 @@ def root() -> Dict[str, Any]:
         "status": "ok",
         "system": "Legal AI System V3 (LangGraph + Postgres)"
     }
+
+
+@app.get("/health")
+def health() -> Dict[str, Any]:
+    """Health check endpoint."""
+    return {"status": "ok"}

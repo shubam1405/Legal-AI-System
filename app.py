@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
-from frontend.public_ui import render_public_chatbot, render_public_lawyers, render_document_upload
+from frontend.public_ui import render_public_chatbot, render_public_lawyers
+from frontend.agent_chat_ui import render_agent_chat
 
 API_URL = "http://127.0.0.1:8000/api"
 
@@ -14,7 +15,7 @@ def main():
     page = st.sidebar.radio("Go to", [
         "🏠 Home",
         "💬 Chatbot",
-        "📄 Document Q&A",
+        "🤖 Agent Chat (tools + PDF)",
         "🔍 Find Lawyers",
     ])
 
@@ -22,16 +23,16 @@ def main():
         st.markdown("""
         ### Welcome to AI Legal Assistant V3
         Use the sidebar to navigate:
-        - **💬 Chatbot** — Ask any legal question and get AI-powered guidance
-        - **📄 Document Q&A** — Upload a PDF and ask questions about its contents
+        - **💬 Chatbot** — Ask any legal question and get AI-powered guidance (also handles case lookup — try "State of Haryana v. Bhajan Lal")
+        - **🤖 Agent Chat** — Tool-using agent chat; upload a judgment PDF and ask questions about it
         - **🔍 Find Lawyers** — Describe your case and find the right lawyer
         """)
 
     elif page == "💬 Chatbot":
         render_public_chatbot()
 
-    elif page == "📄 Document Q&A":
-        render_document_upload()
+    elif page == "🤖 Agent Chat (tools + PDF)":
+        render_agent_chat()
 
     elif page == "🔍 Find Lawyers":
         render_public_lawyers()

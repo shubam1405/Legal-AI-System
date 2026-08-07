@@ -19,3 +19,6 @@ deep-translator
 streamlit
 httpx
 requests
+bharat-courts[archive]
+langgraph-checkpoint-postgres
+psycopg[binary,pool]

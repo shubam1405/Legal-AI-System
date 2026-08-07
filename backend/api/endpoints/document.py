@@ -51,23 +51,40 @@ async def upload_document(
             "metadata": {"document_path": file_path},
             "intent": "ingest",
         }
-        result = document_graph.invoke(state)
+        result = await document_graph.ainvoke(
+            state,
+            config={"configurable": {"thread_id": f"upload-{uuid.uuid4()}"}},
+        )
         collection = result.get("uploaded_documents", [file_path])[-1]
         return UploadResponse(status="success", filename=file.filename or "unknown", collection_name=str(collection))
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@router.post("/query", response_model=QueryResponse)
+from fastapi.responses import StreamingResponse
+
+@router.post("/query")
 async def query_document(request: QueryRequest) -> Any:
     """Query ingested documents using RAG."""
-    try:
-        state = {
-            "original_query": request.query,
-            "collection_name": request.collection_name,
-            "intent": "document_qa",
-        }
-        result = document_graph.invoke(state)
-        return QueryResponse(answer=result.get("final_output", "No answer found."))
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    state = {
+        "original_query": request.query,
+        "collection_name": request.collection_name,
+        "intent": "document_qa",
+    }
+    
+    async def generate_stream():
+        try:
+            async for event in document_graph.astream_events(
+                state,
+                version="v2",
+                config={"configurable": {"thread_id": request.collection_name}},
+            ):
+                kind = event["event"]
+                if kind == "on_chat_model_stream":
+                    chunk = event["data"]["chunk"]
+                    if chunk.content:
+                        yield chunk.content
+        except Exception as e:
+            yield f"\n\nError: {str(e)}"
+            
+    return StreamingResponse(generate_stream(), media_type="text/plain")

@@ -24,29 +24,20 @@ class MatchmakingService:
         Returns list of lawyer dicts with full profile info.
         """
         # Step 1: Extract specializations via LLM
-        extract_msg = [
-            {"role": "system", "content": SPECIALIZATION_EXTRACTION_PROMPT},
-            {"role": "user", "content": case_description}
-        ]
-        specializations_str = call_with_fallback(messages=extract_msg)
+        from langchain_ollama import ChatOllama
+        from backend.schemas.intents import LawyerSpecializationExtraction
+        import os
         
-        # Parse specializations - handle various LLM output formats
+        OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+        OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2")
+        llm = ChatOllama(model=OLLAMA_MODEL, base_url=OLLAMA_BASE_URL, temperature=0).with_structured_output(LawyerSpecializationExtraction)
+        
         try:
-            cleaned = specializations_str.strip()
-            # LLM may wrap JSON in markdown code fences
-            if "```" in cleaned:
-                parts = cleaned.split("```")
-                for part in parts:
-                    part = part.strip().removeprefix("json").strip()
-                    if part.startswith("["):
-                        cleaned = part
-                        break
-            specializations = json.loads(cleaned)
-            if not isinstance(specializations, list):
-                specializations = [str(specializations)]
-        except json.JSONDecodeError:
-            # Fallback: split by comma
-            specializations = [s.strip().strip('"').strip("'") for s in specializations_str.split(",")]
+            result = llm.invoke(f"{SPECIALIZATION_EXTRACTION_PROMPT}\n\nCase description: {case_description}")
+            specializations = result.specializations
+        except Exception:
+            specializations = []
+
 
         # Step 2: Fetch lawyers from DB
         candidates = self.lawyer_repo.search_by_specializations(specializations)

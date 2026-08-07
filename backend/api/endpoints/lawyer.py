@@ -4,6 +4,7 @@ Lawyer AI endpoints.
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import Any, Dict
+import uuid
 
 from backend.graph.graphs.lawyer_graph import lawyer_graph
 
@@ -34,7 +35,10 @@ async def analyze_case(request: AnalyzeRequest) -> Any:
             "original_query": request.case_details,
             "intent": "case_analysis",
         }
-        result = lawyer_graph.invoke(state)
+        result = await lawyer_graph.ainvoke(
+            state,
+            config={"configurable": {"thread_id": f"analyze-{uuid.uuid4()}"}},
+        )
         return LawyerResponse(result=result.get("final_output", ""))
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -50,7 +54,10 @@ async def draft_document(request: DraftRequest) -> Any:
             "metadata": {"doc_type": request.document_type},
             "intent": "legal_template",
         }
-        result = lawyer_graph.invoke(state)
+        result = await lawyer_graph.ainvoke(
+            state,
+            config={"configurable": {"thread_id": f"draft-{uuid.uuid4()}"}},
+        )
         return LawyerResponse(result=result.get("final_output", ""))
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

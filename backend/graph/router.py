@@ -7,4 +7,6 @@ def route_by_intent(state: LegalAssistantState) -> str:
     intent = state.get("intent", "chatbot")
     if intent == "lawyer_match":
         return "lawyer_match_node"
+    if intent == "case_lookup":
+        return "retrieve_precedents_node"
     return "chat_node"

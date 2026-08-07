@@ -31,14 +31,20 @@ def render_public_chatbot():
                     try:
                         response = requests.post(
                             f"{API_URL}/public/chat",
-                            json={"query": prompt, "history": st.session_state.public_chat_history[:-1]}
+                            json={"query": prompt, "history": st.session_state.public_chat_history[:-1]},
+                            stream=True
                         )
                         if response.status_code == 200:
-                            ai_response = response.json().get("response", "No response from AI.")
+                            def iter_response():
+                                for chunk in response.iter_content(chunk_size=None, decode_unicode=True):
+                                    if chunk:
+                                        yield chunk
+                                        
+                            ai_response = st.write_stream(iter_response())
                         else:
                             ai_response = f"Error: {response.status_code} - {response.text}"
+                            st.markdown(ai_response)
 
-                        st.markdown(ai_response)
                         st.session_state.public_chat_history.append(
                             {"role": "assistant", "content": ai_response}
                         )
@@ -84,11 +90,17 @@ def render_document_upload():
                     try:
                         response = requests.post(
                             f"{API_URL}/document/query",
-                            json={"query": query, "collection_name": collection_name}
+                            json={"query": query, "collection_name": collection_name},
+                            stream=True
                         )
                         if response.status_code == 200:
-                            answer = response.json().get("answer", "No answer found.")
-                            st.markdown(f"**Answer:** {answer}")
+                            st.markdown("**Answer:**")
+                            def iter_response():
+                                for chunk in response.iter_content(chunk_size=None, decode_unicode=True):
+                                    if chunk:
+                                        yield chunk
+                            answer = st.write_stream(iter_response())
+
                         else:
                             st.error(f"Error: {response.status_code} - {response.text}")
                     except Exception as e:

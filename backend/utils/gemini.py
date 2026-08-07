@@ -18,7 +18,7 @@ load_dotenv()
 OLLAMA_MODEL: str = os.getenv("OLLAMA_MODEL", "llama3.2")
 OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 
-__all__ = ["get_llm", "call_with_fallback"]
+__all__ = ["get_llm", "call_with_fallback", "stream_with_fallback"]
 
 
 def get_llm(temperature: float = 0.3, model: str = None) -> ChatOllama:
@@ -28,6 +28,21 @@ def get_llm(temperature: float = 0.3, model: str = None) -> ChatOllama:
         base_url=OLLAMA_BASE_URL,
         temperature=temperature,
     )
+
+
+def _to_lc_messages(messages: list) -> list:
+    """Shared by call_with_fallback and stream_with_fallback."""
+    lc_messages = []
+    for m in messages:
+        role = m.get("role", "user")
+        content = m.get("content", "")
+        if role == "system":
+            lc_messages.append(SystemMessage(content=content))
+        elif role == "assistant":
+            lc_messages.append(AIMessage(content=content))
+        else:
+            lc_messages.append(HumanMessage(content=content))
+    return lc_messages
 
 
 def call_with_fallback(prompt: str = None, messages: list = None, temperature: float = 0.3) -> str:
@@ -44,16 +59,7 @@ def call_with_fallback(prompt: str = None, messages: list = None, temperature: f
         llm = get_llm(temperature=temperature)
 
         if messages:
-            lc_messages = []
-            for m in messages:
-                role = m.get("role", "user")
-                content = m.get("content", "")
-                if role == "system":
-                    lc_messages.append(SystemMessage(content=content))
-                elif role == "assistant":
-                    lc_messages.append(AIMessage(content=content))
-                else:
-                    lc_messages.append(HumanMessage(content=content))
+            lc_messages = _to_lc_messages(messages)
             response = llm.invoke(lc_messages)
         else:
             response = llm.invoke([HumanMessage(content=prompt or "")])
@@ -63,4 +69,26 @@ def call_with_fallback(prompt: str = None, messages: list = None, temperature: f
     except Exception as e:
         raise GeminiError(
             f"Ollama call failed — is Ollama running at {OLLAMA_BASE_URL}? Error: {str(e)}"
+        )
+
+
+async def stream_with_fallback(prompt: str = None, messages: list = None, temperature: float = 0.3, config=None):
+    """
+    Async-generator twin of call_with_fallback — yields response chunks as
+    they arrive from Ollama instead of returning the full string at once.
+
+    `config` should be the LangGraph/LangChain RunnableConfig passed down
+    from the calling node, so token-stream callbacks (on_chat_model_stream)
+    propagate up to graph.astream_events() correctly.
+    """
+    llm = get_llm(temperature=temperature)
+    lc_messages = _to_lc_messages(messages) if messages else [HumanMessage(content=prompt or "")]
+
+    try:
+        async for chunk in llm.astream(lc_messages, config=config):
+            if chunk.content:
+                yield chunk.content
+    except Exception as e:
+        raise GeminiError(
+            f"Ollama streaming call failed — is Ollama running at {OLLAMA_BASE_URL}? Error: {str(e)}"
         )

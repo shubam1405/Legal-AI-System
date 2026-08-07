@@ -61,8 +61,13 @@ uploaded_file = st.sidebar.file_uploader(
 
 if uploaded_file:
 
-    with st.sidebar.spinner("Processing PDF..."):
-        result = process_pdf(uploaded_file, st.session_state.thread_id)
+    if st.session_state.get("processed_file_id") != uploaded_file.file_id:
+        with st.sidebar.spinner("Processing PDF..."):
+            result = process_pdf(uploaded_file, st.session_state.thread_id)
+        st.session_state.processed_file_id = uploaded_file.file_id
+        st.session_state.last_process_result = result
+    else:
+        result = st.session_state.get("last_process_result", {})
 
     st.sidebar.success("PDF indexed successfully")
     st.sidebar.json(result)

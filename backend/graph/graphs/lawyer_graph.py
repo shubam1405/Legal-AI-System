@@ -1,7 +1,7 @@
 from langgraph.graph import StateGraph, END, START
 from backend.graph.state import LegalAssistantState
 from backend.graph.nodes import case_analysis_node, generate_draft_node
-
+from backend.graph.checkpoint import get_checkpointer, get_store
 __all__ = ["lawyer_graph"]
 
 def route_action(state: LegalAssistantState) -> str:
@@ -22,4 +22,4 @@ workflow.add_conditional_edges(START, route_action, {
 workflow.add_edge("case_analysis_node", END)
 workflow.add_edge("generate_draft_node", END)
 
-lawyer_graph = workflow.compile()
+lawyer_graph = workflow.compile(checkpointer=get_checkpointer(), store=get_store())

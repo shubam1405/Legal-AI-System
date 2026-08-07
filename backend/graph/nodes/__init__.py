@@ -5,6 +5,7 @@ from .lawyer_nodes import lawyer_match_node
 from .analysis_nodes import case_analysis_node, document_qa_node
 from .draft_nodes import generate_draft_node
 from .intent_nodes import classify_intent_node
+from .precedent_nodes import retrieve_precedents_node
 
 __all__ = [
     "chat_node",
@@ -15,5 +16,6 @@ __all__ = [
     "case_analysis_node",
     "document_qa_node",
     "generate_draft_node",
-    "classify_intent_node"
+    "classify_intent_node",
+    "retrieve_precedents_node"
 ]

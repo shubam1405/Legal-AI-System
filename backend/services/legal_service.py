@@ -18,19 +18,23 @@ class LegalService:
 
     def analyze_case(self, case_description: str) -> str:
         """
-        Analyze a case description and extract IPC sections using Gemini.
-        
-        Args:
-            case_description (str): Description of the case.
-            
-        Returns:
-            str: Analysis containing IPC sections.
+        Analyze a case description and extract IPC sections using Ollama.
         """
-        messages = [
-            {"role": "system", "content": IPC_ANALYSIS_PROMPT},
-            {"role": "user", "content": case_description}
-        ]
-        return call_with_fallback(messages=messages)
+        from langchain_ollama import ChatOllama
+        from backend.schemas.intents import CaseAnalysisResult
+        import os
+        
+        OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+        OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2")
+        
+        llm = ChatOllama(model=OLLAMA_MODEL, base_url=OLLAMA_BASE_URL, temperature=0).with_structured_output(CaseAnalysisResult)
+        
+        try:
+            result = llm.invoke(f"{IPC_ANALYSIS_PROMPT}\n\nCase Description: {case_description}")
+            return result.model_dump_json(indent=2)
+        except Exception as e:
+            return f"{{\"summary\": \"Error\", \"applicable_ipc_sections\": [], \"analysis\": \"Failed to analyze: {str(e)}\"}}"
+
 
     def answer_document_query(self, query: str, collection_name: str) -> str:
         """
