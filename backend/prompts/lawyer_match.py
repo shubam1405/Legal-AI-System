@@ -3,7 +3,7 @@ Prompts for the lawyer matchmaking pipeline.
 Used by matchmaking_service.py.
 """
 
-__all__ = ["SPECIALIZATION_EXTRACTION_PROMPT", "LAWYER_RERANKING_PROMPT"]
+__all__ = ["SPECIALIZATION_EXTRACTION_PROMPT", "LAWYER_RERANKING_PROMPT", "LEGAL_GUIDANCE_PROMPT"]
 
 SPECIALIZATION_EXTRACTION_PROMPT = """You are a legal domain classifier.
 
@@ -34,6 +34,18 @@ Return a JSON array of the 1-3 most relevant specializations.
 Example: ["Criminal Law", "Property Law"]
 
 Return ONLY the JSON array. No explanation, no code blocks."""
+
+LEGAL_GUIDANCE_PROMPT = """You are an expert in Indian law, especially the Indian Penal Code (IPC) and allied statutes.
+
+A user has described the following legal problem:
+{case_description}
+
+Provide:
+1. The most relevant IPC section(s) or other applicable Indian legal provisions, each with a short title (e.g. "Section 420 - Cheating")
+2. Concrete remedies or next steps the person can take (e.g. filing an FIR, sending a legal notice, approaching consumer court)
+3. A short, plain-language explanation of their situation (2-4 sentences, no legal jargon)
+
+Be specific to Indian law. If you're not certain of an exact section number, say so rather than guessing confidently."""
 
 LAWYER_RERANKING_PROMPT = """You are an expert legal matchmaker for Indian law.
 

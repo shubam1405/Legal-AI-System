@@ -26,6 +26,7 @@ class ChatResponse(BaseModel):
 
 class LawyerMatchResponse(BaseModel):
     lawyers: list[dict] = []
+    legal_guidance: dict = {}
 
 
 from fastapi.responses import StreamingResponse
@@ -76,12 +77,14 @@ async def chat(request: ChatRequest) -> Any:
 
 @router.post("/match-lawyer", response_model=LawyerMatchResponse)
 async def match_lawyer(request: ChatRequest) -> Any:
-    """Find a lawyer match based on user query."""
+    """Find a lawyer match based on user query, plus applicable legal guidance."""
     try:
         db = SessionLocal()
         try:
-            lawyers = MatchmakingService(db).match_lawyers(request.query)
-            return LawyerMatchResponse(lawyers=lawyers)
+            service = MatchmakingService(db)
+            lawyers = service.match_lawyers(request.query)
+            guidance = service.get_legal_guidance(request.query)
+            return LawyerMatchResponse(lawyers=lawyers, legal_guidance=guidance)
         finally:
             db.close()
     except Exception as e:

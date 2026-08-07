@@ -6,7 +6,7 @@ import json
 from sqlalchemy.orm import Session
 from backend.database.repositories.lawyer_repository import LawyerRepository
 from backend.utils.gemini import call_with_fallback
-from backend.prompts.lawyer_match import SPECIALIZATION_EXTRACTION_PROMPT
+from backend.prompts.lawyer_match import SPECIALIZATION_EXTRACTION_PROMPT, LEGAL_GUIDANCE_PROMPT
 
 __all__ = ["MatchmakingService"]
 
@@ -67,3 +67,30 @@ class MatchmakingService:
             })
         
         return results
+
+    def get_legal_guidance(self, case_description: str) -> dict:
+        """
+        Given a case description, returns applicable IPC/legal sections,
+        concrete remedies, and a plain-language explanation.
+
+        Best-effort: returns an empty-ish guidance dict (not an exception)
+        if the LLM call fails, so a guidance failure never blocks the
+        lawyer-matching results it's shown alongside.
+        """
+        from langchain_ollama import ChatOllama
+        from backend.schemas.intents import LegalGuidance
+        import os
+
+        OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+        OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2")
+        llm = ChatOllama(model=OLLAMA_MODEL, base_url=OLLAMA_BASE_URL, temperature=0).with_structured_output(LegalGuidance)
+
+        try:
+            result = llm.invoke(LEGAL_GUIDANCE_PROMPT.format(case_description=case_description))
+            return result.model_dump()
+        except Exception as e:
+            return {
+                "applicable_sections": [],
+                "remedies": [],
+                "explanation": f"Could not generate legal guidance: {str(e)}",
+            }

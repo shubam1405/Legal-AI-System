@@ -143,6 +143,22 @@ def render_public_lawyers():
                     if response.status_code == 200:
                         data = response.json()
                         matched_lawyers = data.get("lawyers", [])
+                        guidance = data.get("legal_guidance", {})
+
+                        if guidance and (guidance.get("applicable_sections") or guidance.get("remedies") or guidance.get("explanation")):
+                            st.subheader("📖 Legal Guidance")
+                            if guidance.get("explanation"):
+                                st.info(guidance["explanation"])
+                            g1, g2 = st.columns(2)
+                            with g1:
+                                st.markdown("**Applicable Sections**")
+                                for section in guidance.get("applicable_sections", []):
+                                    st.markdown(f"- {section}")
+                            with g2:
+                                st.markdown("**What You Can Do**")
+                                for remedy in guidance.get("remedies", []):
+                                    st.markdown(f"- {remedy}")
+                            st.divider()
 
                         if not matched_lawyers:
                             st.warning("No suitable lawyers found.")
