@@ -66,6 +66,25 @@ def find_similar_cases(query):
     return cases
 
 
+def find_in_document(query, case_name, n_results=5):
+    """
+    Search only within chunks belonging to ONE specific document
+    (filtered by case_name), instead of the whole shared collection.
+    Used by the document CRAG subgraph to scope retrieval to the
+    document the user actually uploaded in this thread.
+    """
+    results = collection.query(
+        query_texts=[query],
+        n_results=n_results,
+        where={"case_name": case_name}
+    )
+
+    if not results["documents"] or not results["documents"][0]:
+        return []
+
+    return results["documents"][0]
+
+
 def find_similar_with_scores(query, n_results=5):
     """Return similar cases with distance scores for visualization."""
     results = collection.query(

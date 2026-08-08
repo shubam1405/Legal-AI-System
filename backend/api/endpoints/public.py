@@ -38,14 +38,15 @@ import uuid
 async def chat(request: ChatRequest) -> Any:
     """Chat with the public legal AI."""
     state = {
-        "original_query": request.query,
+        "query": request.query,
         "chat_history": request.history,
-        "language": request.language,
     }
     thread_id = f"public-chat-{uuid.uuid4()}"
 
     async def generate_stream():
         try:
+            streamed_any = False
+            final_response = None
             async for event in public_graph.astream_events(
                 state,
                 version="v2",
@@ -53,20 +54,29 @@ async def chat(request: ChatRequest) -> Any:
             ):
                 kind = event["event"]
                 if kind == "on_chat_model_stream":
-                    # classify_intent_node also calls an LLM (for structured
-                    # intent classification) inside the same graph run, which
-                    # also fires on_chat_model_stream events. Only forward
-                    # chunks from chat_node's own answer, or the classifier's
-                    # raw JSON leaks into the response shown to the user.
+                    # intent_classifier / case_query_processor also call an LLM
+                    # (structured output) inside the same graph run, which also
+                    # fires on_chat_model_stream events. Only forward chunks from
+                    # response_generator's own answer, or internal JSON leaks
+                    # into the response shown to the user.
                     node_name = event.get("metadata", {}).get("langgraph_node")
-                    if node_name != "chat_node":
+                    if node_name != "response_generator":
                         continue
                     chunk = event["data"]["chunk"]
                     if chunk.content:
-                        # Yield the content directly for st.write_stream to consume
-                        # Or as SSE: yield f"data: {json.dumps({'chunk': chunk.content})}\n\n"
-                        # Since Streamlit's write_stream expects text, we can just yield the text
+                        streamed_any = True
                         yield chunk.content
+                elif kind == "on_chain_end":
+                    # Tracks the latest full-state output seen -- used as a
+                    # fallback for paths that never reach response_generator
+                    # (e.g. CLARIFICATION, which writes its own response and
+                    # goes straight to END without streaming anything).
+                    output = event.get("data", {}).get("output")
+                    if isinstance(output, dict) and output.get("response"):
+                        final_response = output["response"]
+
+            if not streamed_any and final_response:
+                yield final_response
         except Exception as e:
             import traceback
             traceback.print_exc()

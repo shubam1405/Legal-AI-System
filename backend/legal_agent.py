@@ -18,8 +18,10 @@ from langgraph.checkpoint.memory import MemorySaver
 from langchain_community.tools import DuckDuckGoSearchRun
 
 from database.vector_store import find_similar_cases
-from backend.state.document_store import get_current_document
+from backend.state.document_store import get_current_document, get_current_case_name
 from backend.tools.legal_analysis import analyze_current_case
+from backend.document_crag_graph import run_document_crag
+import asyncio
 
 
 # =========================
@@ -45,6 +47,30 @@ def summarize_current_document(config: RunnableConfig):
         return "No document uploaded."
 
     return text[:2000]
+
+
+@tool
+def ask_document(query: str, config: RunnableConfig):
+    """
+    Answer a question about the uploaded document. Retrieves only from
+    THIS document (not the whole case database). If the document doesn't
+    actually contain the answer, automatically searches the free
+    bharat_courts archive and the web in parallel, then answers using
+    whichever source actually has the answer -- clearly noting when the
+    answer came from outside the document.
+    """
+    thread_id = config.get("configurable", {}).get("thread_id", "default")
+    case_name = get_current_case_name(thread_id)
+
+    if not case_name:
+        return "No document uploaded. Please upload a PDF first."
+
+    result = asyncio.run(run_document_crag(query, case_name))
+
+    answer = result["answer"]
+    if result["used_external"]:
+        answer += "\n\n(Note: this answer used outside sources -- your document alone didn't cover it.)"
+    return answer
 
 
 @tool
@@ -115,6 +141,8 @@ def chat_node(state: ChatState, config=None):
             "You can ask me about legal cases, upload a judgement for analysis, or search for legal precedents.'\n\n"
             "2. Only use tools when the user asks a clearly legal question or requests a specific action:\n"
             "   - Use 'summarize_current_document' when asked to summarize an uploaded judgement\n"
+            "   - Use 'ask_document' when asked a SPECIFIC question about the uploaded document "
+            "(it searches the document itself, and falls back to real case-law + web search if the document doesn't cover it)\n"
             "   - Use 'search_legal_cases' when asked to find similar cases or precedents (only with a real query)\n"
             "   - Use 'analyze_current_case' when asked to analyze a judgement\n"
             "   - Use 'web_search' when asked about recent legal news or information\n\n"
@@ -140,6 +168,7 @@ def build_agent():
 
     tools = [
         summarize_current_document,
+        ask_document,
         search_legal_cases,
         web_search,
         analyze_current_case,

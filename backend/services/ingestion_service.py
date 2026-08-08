@@ -51,8 +51,10 @@ def process_pdf(file, thread_id="default"):
         raise ValueError(f"PDF '{filename}' appears to be empty or unreadable (scanned image?). "
                          "Please upload a text-based PDF.")
 
-    # Store document for tools
-    set_current_document(text, thread_id)
+    # Store document for tools (text + case_name, so retrieval can be
+    # scoped to just this document later)
+    case_name_for_scoping = filename.replace(".pdf", "")
+    set_current_document(text, thread_id, case_name=case_name_for_scoping)
 
     # Extract citations
     citations = extract_case_citations(text)

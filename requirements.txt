@@ -20,5 +20,6 @@ streamlit
 httpx
 requests
 bharat-courts[archive]
+ddgs
 langgraph-checkpoint-postgres
 psycopg[binary,pool]

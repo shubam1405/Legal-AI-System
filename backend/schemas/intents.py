@@ -1,5 +1,26 @@
 from pydantic import BaseModel, Field
-from typing import List
+from typing import List, Optional
+
+class ChatIntentClassification(BaseModel):
+    intent: str = Field(
+        description="One of: 'SIMILAR_CASE' (find cases similar to a fact pattern), "
+                    "'DIRECT_CASE_SEARCH' (a named case, e.g. 'X v. Y'), "
+                    "'LEGAL_KNOWLEDGE' (a general legal question, no case search needed), "
+                    "'LEGAL_RESEARCH' (asking about a law, statute, or legal concept in depth), "
+                    "'CLARIFICATION' (the query is too vague/ambiguous to act on)."
+    )
+    confidence: float = Field(description="Confidence score between 0.0 and 1.0.")
+    reasoning: str = Field(description="Brief reasoning for why this intent was chosen.")
+
+
+class CaseQueryExtraction(BaseModel):
+    case_name: Optional[str] = Field(default=None, description="Case name if a specific case was named, e.g. 'State of Haryana v. Bhajan Lal'.")
+    case_number: Optional[str] = Field(default=None, description="Case/citation number if mentioned.")
+    court: Optional[str] = Field(default=None, description="Court name if mentioned.")
+    year: Optional[int] = Field(default=None, description="Year if mentioned.")
+    case_facts: Optional[str] = Field(default=None, description="For similar-case searches: the fact pattern to search for.")
+    search_query: str = Field(description="A clean, standalone search query built from the above, suitable for searching a case archive or the web.")
+
 
 class IntentClassification(BaseModel):
     intent: str = Field(

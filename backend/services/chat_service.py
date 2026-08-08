@@ -51,3 +51,36 @@ class ChatService:
         messages = self._build_messages(query, history)
         async for chunk in stream_with_fallback(messages=messages, config=config):
             yield chunk
+
+    async def stream_response(self, query: str, context: list, history: list, config=None):
+        """
+        General-purpose streaming generator: like stream_general_chat, but
+        with optional extra context (e.g. ranked case search results)
+        injected into the prompt. Used by the rebuilt public_graph's
+        response_generator node, which needs to answer either from pure
+        model knowledge (context=[]) or grounded in retrieved cases
+        (context=[...]).
+
+        Args:
+            query: The user's query.
+            context: List of context strings (e.g. case excerpts) to ground
+                     the answer in. Empty list = pure model knowledge.
+            history: A list of previous message dictionaries.
+            config: RunnableConfig from the calling LangGraph node.
+        """
+        system_prompt = GENERAL_HELP_SYSTEM_PROMPT
+        if context:
+            context_block = "\n\n".join(str(c) for c in context)
+            system_prompt = (
+                f"{GENERAL_HELP_SYSTEM_PROMPT}\n\n"
+                f"Use the following retrieved case information to help answer, "
+                f"and cite which case(s) you're drawing from:\n\n{context_block}"
+            )
+
+        messages = [{"role": "system", "content": system_prompt}]
+        for msg in history:
+            messages.append(msg)
+        messages.append({"role": "user", "content": query})
+
+        async for chunk in stream_with_fallback(messages=messages, config=config):
+            yield chunk
